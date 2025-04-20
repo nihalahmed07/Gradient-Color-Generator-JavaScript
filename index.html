@@ -4,14 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Generator</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Neo Gradient Generator</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    .
+    <nav>
+        <img src="./logo.jpeg" alt="Logo">
+        <h2>Neo Gradient Generator</h2>
+    </nav>
 
+    <div class="wrapper">
+        <div class="gradient-box"></div>
+        <div class="row options">
+            <div class="column direction">
+                <p>Direction</p>
+                <div class="select-box">
+                    <select>
+                        <option value="to top">Top</option>
+                        <option value="to right top">Right top</option>
+                        <option value="to right">Right</option>
+                        <option value="to right bottom">Right bottom</option>
+                        <option value="to bottom">Bottom</option>
+                        <option value="to left bottom">Left bottom</option>
+                        <option value="to left">Left</option>
+                        <option value="to left top" selected>Left top</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column palette">
+                <p>Colors</p>
+                <div class="colors">
+                    <input type="color" value="#62b6cb">
+                    <input type="color" value="#1b4965">
+                </div>
+            </div>
+        </div>
+        <textarea class="row" disabled>background-image: linear-gradient(to left top, #62b6cb,  #1b4965);</textarea>
+        <div class="row buttons">
+            <button class="refresh">Refresh Colors</button>
+            <button class="copy">Copy Code</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed by <a href="https://nihalahmed.in/">@Nihal Ahmed</a></p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 
